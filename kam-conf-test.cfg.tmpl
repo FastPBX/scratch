@@ -1,0 +1,19 @@
+[TEST1]
+{{range .EndpointIPs "asterisk"}}
+contact=sip:{{.}}:5060
+{{end}}
+
+[TEST2]
+{{range .EndpointIPs "asterisk-deployment"}}
+contact=sip:{{.}}:5061
+{{end}}
+
+[TEST3]
+{{range .EndpointIPs "voip-asterisk-deployment"}}
+contact=sip:{{.}}:5062
+{{end}}
+
+[TEST4]
+{{range .EndpointIPs "voip-asterisk-service"}}
+contact=sip:{{.}}:5063
+{{end}}
