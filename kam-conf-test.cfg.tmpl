@@ -1,4 +1,4 @@
-[TEST3]
-{{range .EndpointIPs "voip-asterisk-deployment" "voip"}}
-contact=sip:{{.}}:5062
+[TEST4]
+{{range .EndpointIPs "voip-asterisk-service" "voip"}}
+contact=sip:{{.}}:5063
 {{end}}
